@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    width: 100vw;
+    height: 100dvh;
+    background-color: #00244A;
+    color: #BCE6F7;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#main,
+.header,
+.lists,
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main,
+.header,
+.wrapper {
+    flex-direction: column;
+}
+
+.lists,
+.container {
+    width: 90vw;
+    justify-content: space-evenly;
+    border: 1px solid rgba(188, 230, 247, 0.2);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(1, 16, 32, 0.15) 0px 0px 0px 1px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(auto, 30rem));
+}
+
+.container,
+.wrapper {
+    gap: 1rem;
+}
+
+.wrapper a,
+p {
+    color: #BCE6F7;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.img-sample,
+table {
+    height: 12rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border: 1px solid rgba(188, 230, 247, 0.4);
+    text-align: center;
+    width: 5rem;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+}
